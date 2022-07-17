@@ -62,9 +62,20 @@
         <a class="footer-link" href="https://www.linkedin.com/in/rohitsachdeva31/">LinkedIn</a>
         <a class="footer-link" href="https://twitter.com/RohitSa19876742">Twitter</a>
         <a class="footer-link" href="https://github.com/rohits301">GitHub</a>
-        <p class="copyright">© 2021 Rohit Sachdeva.</p>
+<!--         <p class="copyright">© {theDate} Rohit Sachdeva.</p> -->
     </div>
+    <div class="copyright">
+        <footer>Copyright © <span id="year"></span> , All rights reserved to Rohit Sachdeva</footer>
+    </div>
+    <script>
+  
+      function getCurrentYear() {
+        return new Date().getFullYear(); // returns the year via local timing
+      };
 
+      document.getElementById("year").innerHTML = getCurrentYear(); 
+      //changing the inner html of the span with "year" id to the given year(2021)
+    </script>
 </body>
 
 </html>
