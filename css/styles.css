@@ -26,17 +26,20 @@ h3 {
 }
 
 hr {
-    border-top: dotted #EAF6F6 6px; /* style color width*/
+    border-top: 6px dotted #EAF6F6; /* width style color*/
     border-bottom: none;
+    border-left: none;
+    border-right: none;
     width: 4%; /* for scaling */
     margin: 100px auto;
 }
 
 a {
-    color: #11999E;
-    font-family: 'Source Sans Pro', sans-serif;
-    margin: 10px 20px;
-    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    margin: 20px 10px;
+    /* text-decoration: none; */
 }
 
 a:hover {  
@@ -55,6 +58,16 @@ p {
 
 .pro {
     text-decoration : underline #a371f7;
+}
+
+.auto-typed {
+    color: crimson;
+    font-family: 'Dancing Script', serif;
+    font-size: 50px;
+    font-weight: 600;
+}
+.typed-cursor {
+    color: red;
 }
 
 .top-cloud {
@@ -98,7 +111,7 @@ p {
 
 .bottom-container {
     background-color: #66BFBF;
-    padding: 50px 0 20px;
+    padding: 40px 0 1px;
 }
 
 .contact-intro{
@@ -115,7 +128,7 @@ p {
 .copyright {
     color: #EAF6F6;
     font-size: 0.75rem;
-    padding: 20px 0;
+    padding: 15px 0 5px 0;
 }
 
 .btn {
