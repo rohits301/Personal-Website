@@ -54,7 +54,7 @@ section {
 }
 
 section:nth-child(odd) {
-    background: #F0F0F0;
+    background: #E9E9E9;
 }
 
 h1 {
