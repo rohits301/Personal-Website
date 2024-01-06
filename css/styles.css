@@ -1,168 +1,182 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
     margin: 0;
-    text-align: center;
-    font-family: 'Merriweather', serif;
-    color: #40514E;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 120px;
+    background: #11141a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #0ef;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #F0F0F0;
+    color: black;
+    font-weight: 300;
+    
+}
+
+section:nth-child(odd) {
+    background: #F0F0F0;
 }
 
 h1 {
     font-family: 'Sacramento', cursive;
     font-size: 5.625rem;
-    margin: 50px auto 0 auto;
     color: #66BFBF;
+    margin: 0;
 }
 
 h2 {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 2.5rem;
-    color: #66BFBF;
-    font-weight: normal;
-    padding-bottom: 10px; /* to space things out */
-}
-
-h3 {
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #11999E;
-}
-
-hr {
-    border-top: 6px dotted #EAF6F6; /* width style color*/
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    width: 4%; /* for scaling */
-    margin: 100px auto;
-}
-
-a {
-    color: black;
-    font-size: 25px;
-    /* font-family: 'Source Sans Pro', sans-serif; */
-    margin: 20px 10px;
-    /* text-decoration: none; */
-}
-
-a:hover {  
-    color: #EAF6F6;
-}
-
-p {   
-    line-height: 2;
-}
-
-.top-container {
-    background-color: #EAF6F6;
-    position: relative;
-    padding-top: 100px;
-}
-
-.pro {
-    text-decoration : underline #a371f7;
+    color: #66bfbf;
+    font-weight: normal; 
+    padding-bottom: 10px;
 }
 
 .auto-typed {
     color: crimson;
-    font-family: 'Dancing Script', serif;
+    font-family: "Dancing Script", serif;
     font-size: 50px;
     font-weight: 600;
 }
+
 .typed-cursor {
-    color: red;
+    color: crimson;
+} 
+
+/* Contact Section styles */
+#contact, .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.top-cloud {
-    position: absolute;
-    top: 50px;
-    right: 200px;
+.row-container {
+    display: flex;
 }
 
-.bottom-cloud {
-    position: absolute;
-    left : 250px;
-    bottom: 300px;
+.footer-link, .copyright {
+    padding: 5px;
+    margin: 5px;
 }
 
-.middle-container {
-    margin: 100px 0; /* top and bottom - 100px, left and right - 0 */
-}
 
-.intro {
-    width: 30%;
-    margin : auto;
+/* Project Card */
+#projects {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Setting the columns */
+    gap: 10px; /* Gap between grid items */
+    overflow-x: auto; /* Enable horizontal scroll if the items exceed the container width */
+    width: 100%; /* Ensure the container spans the available width */
+    
 }
-
-.skill-row {
-    width: 50%;
-    margin: 100px auto;
-    text-align: left;
-}
-
-.code-img {
-    width: 25%;
-    float: right;
-    margin-right: 30px;
-}
-
-.jugaad-img {
-    width: 30%;
-    float: left;
-    margin-right: 30px;
-}
-
-.bottom-container {
-    background-color: #66BFBF;
-    padding: 40px 0 1px;
-}
-
-.contact-intro{
-    width: 40%;
-    line-height: 2;
-    margin: 40px auto 60px;
-}
-
-.contact-msg {
-    width: 40%;
-    margin: 40px auto 60px; /* top left&right bottom*/
-}
-
-.copyright {
-    color: #EAF6F6;
-    font-size: 0.75rem;
-    padding: 15px 0 5px 0;
-}
-
-.btn {
-    background: #11CDD4;
-    background-image: -webkit-linear-gradient(top, #11CDD4, #11999E);
-    background-image: -moz-linear-gradient(top, #11CDD4, #11999E);
-    background-image: -ms-linear-gradient(top, #11CDD4, #11999E);
-    background-image: -o-linear-gradient(top, #11CDD4, #11999E);
-    background-image: -webkit-gradient(to bottom, #11CDD4, #11999E);
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-    color: #FFFFFF;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
-    font-weight: 100;
-    padding: 10px 20px 10px 20px;
-    border: solid #337FED 0;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
+.card {
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    width: 80%;
+    max-width: 600px; /* change width*/
+    display: flex;
+    flex-direction: column;
+    background-color: #0ef;
+    color: white;
     text-align: center;
+    padding: 2em;
+    margin: 2px;
+}
+.profile-name {
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: 0;
 }
 
-.btn:hover {
-    border: solid #337FED 0;
-    background: #30E3CB;
-    background-image: -webkit-linear-gradient(top, #30E3CB, #2BC4AD);
-    background-image: -moz-linear-gradient(top, #30E3CB, #2BC4AD);
-    background-image: -ms-linear-gradient(top, #30E3CB, #2BC4AD);
-    background-image: -o-linear-gradient(top, #30E3CB, #2BC4AD);
-    background-image: -webkit-gradient(to bottom, #30E3CB, #2BC4AD);
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-    text-decoration: none;
+.profile-name::after {
+    content:"";
+    display: block;
+    height: 1px;
+    width: 2em;
+    background-color: #1f242d;
+    margin: 0.7em auto 0.5em;
+    opacity: 0.35;
 }
+
+.profile-image{
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.profile-body {
+    font-weight: 300;
+    opacity: 0.9;
+    margin-bottom: 0;
+}
+/* 
+@media(min-width: 800px){
+    .card{
+        flex-direction: row;
+    }
+    .profile-main {
+        text-align: left;
+        margin-left: 2em;
+    }
+
+    .profile-name::after {
+        margin-left: 0;
+    }
+} */
+
+/* test */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Setting the columns */
+    gap: 10px; /* Gap between grid items */
+    overflow-x: auto; /* Enable horizontal scroll if the items exceed the container width */
+    width: 100%; /* Ensure the container spans the available width */
+  }
+  
+  .grid-item {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+  }
+  

@@ -12,82 +12,104 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Courgette&family=Lato&family=Merriweather&family=Sacramento&family=Source+Sans+Pro&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Dancing+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
 </head>
 
 <body>
-    <div class="top-container">
-        <img class="top-cloud" src="assets/cloud.png" alt="cloud-img">
+    <header>
+        <a href="#" class="logo">RS</a>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="home">
         <h1>I'm Rohit.</h1>
         <h2>a <span class="auto-typed"> </span> </h2>
-        <img class="bottom-cloud" src="assets/cloud.png" alt="cloud-img">
-        <img src="assets/mountain.png" alt="mountain-img">
-    </div>
+    </section>
+    <section id="about">
+        <h3>I've completed my undergraduation in ECE from NSIT batch of 2023 <br>
+            I've been working at Publicis Sapient as Software Developer for past 1.7 years.</h3>
+    </section>
+    <section id="skills">
+        <h3>I've worked in Java, React, HTML, CSS.</h3>
+    </section>
+    <section id="projects">
 
-    <div class="middle-container">
-        <div class="profile">
-            <img src="assets/rohit-pic.png" alt="rohit-pic">
-            <h2>Hello.</h2>
-            <p class="intro">I'm Rohit, a software developer, a curious being.</p>
-        </div>
-        <hr>
-        <div class="skills">
-            <h2>My Skills</h2>
-            <div class="skill-row">
-                <img class="code-img" src="https://media.giphy.com/media/26n7b7PjSOZJwVCmY/giphy.gif" alt="code-gif">
-                <h3>Software Development</h3>
-                <p>I am passionate about building products. I am into building everyday-need and productivity softwares.
+        <div class="card">
+            <div class="profile-sidebar">
+                <img class="profile-image" src="https://i.pravatar.cc/125" alt="">
+            </div>
+            <div class="profile-main">
+                <h2 class="profile-name">My Project 1</h2>
+                <p class="profile-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt vitae tempore molestiae esse
+                    sequi! Laudantium iste, tempore, atque quidem minima officia illum mollitia, natus quia dolor
+                    libero. Quisquam, optio qui.
                 </p>
             </div>
-            <div class="skill-row">
-                <!-- The JUGAADu ENGINEER -->
-                <img class="jugaad-img" src="https://media.giphy.com/media/XreQmk7ETCak0/giphy.gif" alt="jugaad-gif">
-                <h3>The Makeshift Engineer</h3>
-                <p>When I first came across a computer, I was about 10 and I could fix any errors in any application without any prior knowledge (not to forget I created a lot of them too), almost intuitively, and since then I generally found a work around things. I'm <em>The Indian Engineer</em>.
+        </div>
+        <div class="card">
+            <div class="profile-sidebar">
+                <img class="profile-image" src="https://i.pravatar.cc/125" alt="">
+            </div>
+            <div class="profile-main">
+                <h2 class="profile-name">My Project 2</h2>
+                <p class="profile-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt vitae tempore molestiae esse
+                    sequi! Laudantium iste, tempore, atque quidem minima officia illum mollitia, natus quia dolor
+                    libero. Quisquam, optio qui.
                 </p>
-                <!-- <img class="books-img" src="https://media.giphy.com/media/1j8nQCV8Q8MXKxYwIC/giphy.gif" alt="books-gif">
-                <h3>Reading Books</h3>
-                <p>I started reading Harry Potter series as a freshman and got hooked on to reading since then.</p> -->
             </div>
         </div>
-        <hr>
-        <div class="contact-me">
-            <h2>Get In Touch!</h2>
-            <h3 class="contact-intro">I also love reading and discussing about books and programming memes</h3>
-            <p class="contact-msg">Let's talk about how amazing books are and we can build great products that have unparalleled aesthetics on the side!</p>
-            <a class="btn" href="mailto:jacobstinger199@email.com">CONTACT ME</a>
+        <div class="card">
+            <div class="profile-sidebar">
+                <img class="profile-image" src="https://i.pravatar.cc/125" alt="">
+            </div>
+            <div class="profile-main">
+                <h2 class="profile-name">My Project 3</h2>
+                <p class="profile-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt vitae tempore molestiae esse
+                    sequi! Laudantium iste, tempore, atque quidem minima officia illum mollitia, natus quia dolor
+                    libero. Quisquam, optio qui.
+                </p>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="bottom-container">
-        <a class="footer-link" href="https://www.linkedin.com/in/rohitsachdeva31/"> <i class="fa-brands fa-linkedin"></i></a>
-        <a class="footer-link" href="https://www.instagram.com/rororo_rohit/" ><i class="fa-brands fa-instagram"></i></a>
-        <a class="footer-link" href="https://github.com/rohits301"><i class="fa-brands fa-github"></i> </a>
-        <p class="copyright"><i class="fa-regular fa-copyright"></i> <span id="year"></span> , All rights reserved to Rohit Sachdeva.</p>
-    </div>
-    
+    <section id="contact" class="container">
+
+        <!-- <form action="https://formspree.io/f/moqgqndp" method="POST">
+            <label>
+                Your email:
+                <input type="email" name="email">
+            </label>
+            <label>
+                Your message:
+                <textarea name="message"></textarea>
+            </label>
+            <button type="submit">Send</button>
+        </form> -->
+
+        <div class="row-container">
+            <a aria-label="linkedin" class="footer-link" href="https://www.linkedin.com/in/rohitsachdeva31/"> <i
+                    class="fa-brands fa-linkedin fa-2xl"></i></a>
+            <a aria-label="instagram" class="footer-link" href="https://www.instagram.com/rororo_rohit/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            <a aria-label="github" class="footer-link" href="https://github.com/rohits301"><i
+                    class="fa-brands fa-github fa-2xl"></i> </a>
+        </div>
+        <p class="copyright"><i class="fa-regular fa-copyright"></i> <span id="year"></span> All rights reserved to
+            Rohit Sachdeva.</p>
+    </section>
+
     <!-- for icons -->
     <script src="https://kit.fontawesome.com/ce35e0ebbe.js" crossorigin="anonymous"></script>
-    <!-- dynamic year -->
-    <script>
-        function getCurrentYear() {
-            return new Date().getFullYear(); // returns the year via local timing
-        };
-
-        document.getElementById("year").innerHTML = getCurrentYear();
-    </script>
     <!-- typed-js -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <!-- Setup and start animation! -->
-    <script>
-        var typed = new Typed('.auto-typed', {
-            strings: ["Software Developer", "Food connoisseur", "Ukulele player", "Dancer"],
-            typeSpeed: 125,
-            backSpeed: 125,
-            loop: true
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
